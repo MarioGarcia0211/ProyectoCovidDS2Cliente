@@ -1,0 +1,132 @@
+
+<div class="content">
+
+  <div class="">
+    <div class="card-body bg-info">
+
+
+      <div class="titulo">
+        <h2><b> Casos municipales</b></h2>
+      </div>
+
+        <div class="flex">
+         <div class="buscar form-inline active-purple-3 active-purple-4">
+          <input [formControl]="search" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Municipio"
+           aria-label="Search" list="ciudades">
+           <datalist id="ciudades">
+             <option>Leticia</option>
+             <option>Popayán</option>
+             <option>Medellín</option>
+             <option>Arauca</option>
+             <option>Barranquilla</option>
+             <option>Cartagena</option>
+             <option>Tunja</option>
+             <option>Manizales</option>
+             <option>Florencia</option>
+             <option>Yopal</option>
+             <option>Valledupar</option>
+             <option>Quibdó</option>
+             <option>Montería</option>
+             <option>Bogotá</option>
+             <option>Inírida</option>
+             <option>San José del Guaviare</option>
+             <option>Neiva</option>
+             <option>Riohacha</option>
+             <option>Santa Marta</option>
+             <option>Villavicencio</option>
+             <option>Pasto</option>
+             <option>Cúcuta</option>
+             <option>Mocoa</option>
+             <option>Armenia</option>
+             <option>Pereira</option>
+             <option>San Andrés</option>
+             <option>Bucaramanga</option>
+             <option>Sincelejo</option>
+             <option>Ibagué</option>
+             <option>Cali</option>
+             <option>Mitú</option>
+             <option>Puerto Carreño</option>
+             <option>Buenaventura</option>
+           </datalist>
+           <button (click)="getPacientes()" type="button" class="btn btn-primary"><ion-icon class="mr2 lead" name="search-outline"></ion-icon>Buscar</button>
+       </div>
+       <div class="buscar">
+         <label for=""><p><b>{{ciudad}}</b></p></label>
+       </div>
+       </div>
+
+      <div class="contenidotabla">
+
+        <table class="table table-hover table-fixed">
+          <thead>
+          <tr style="width: 3700">
+            <th style="width: 150px" class="table-dark">Número_caso</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_notificación</th>
+            <th style="width: 150px" class="table-dark">Código_divipola</th>
+            <th style="width: 200px" class="table-dark">Ciudad</th>
+            <th style="width: 200px" class="table-dark">Departamento</th>
+            <th style="width: 150px" class="table-dark">Atención</th>
+            <th style="width: 100px" class="table-dark">Edad</th>
+            <th style="width: 100px" class="table-dark">Sexo</th>
+            <th style="width: 200px" class="table-dark">Tipo</th>
+            <th style="width: 200px" class="table-dark">Estado</th>
+            <th style="width: 150px" class="table-dark">País_de_procedencia</th>
+            <th style="width: 200px" class="table-dark">FIS</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_muerte</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_diagnótico</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_recuperación</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_reporte_web</th>
+            <th style="width: 200px" class="table-dark">Tipo_de_recuperación</th>
+            <th style="width: 150px" class="table-dark">Código_dpto</th>
+            <th style="width: 150px" class="table-dark">Código_país</th>
+            <th style="width: 200px" class="table-dark">Pertenencia_étnica</th>
+            <th style="width: 200px" class="table-dark">Nombre_grupo_étnico</th>
+          </tr>
+
+        </thead>
+        <tbody>
+           <tr style="width: 3700px" class="" *ngFor="let list of listPacients">
+            <td style="width: 150px" class="table-dark bg-info">{{list.id_de_caso}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_de_notificaci_n}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.departamento}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.ciudad_municipio_nom}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.departamento_nom}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.atenci_n}}</td>
+            <td style="width: 100px" class="table-dark bg-info">{{list.edad}}</td>
+            <td style="width: 100px" class="table-dark bg-info">{{list.sexo}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.tipo}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.estado}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.pa_s_de_procedencia}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fis}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_de_muerte}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_diagnostico}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_recuperado}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_reporte_web}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.tipo_recuperaci_n}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.codigo_deparatamento}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.codigo_pais}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.pertenencia_etnica}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.nombre_grupo_etnico}}</td>
+          </tr>
+        </tbody>
+
+        </table>
+
+      </div>
+
+      <div class="botones">
+        <div class="boton">
+        <button type="button" class="btn btn-success" routerLink="/graficasmunicipio">
+          <ion-icon name="stats-chart-outline"></ion-icon>
+          Generar gráficos</button>
+        <button type="button" class="btn btn-success" (click)="exportarDatos()">
+          <ion-icon name="download-outline"></ion-icon>
+          Descargar</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>

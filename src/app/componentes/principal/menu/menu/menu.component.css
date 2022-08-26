@@ -1,0 +1,29 @@
+
+/*  nav{
+ position: absolute;
+  overflow: hidden;
+} */
+
+a:hover{
+  background-color: blue;
+  animation: 1s ms 1;
+}
+
+.rs{
+  display: block;
+  float: right;
+  line-height: 50px;
+  width: 160px;
+}
+
+.img{
+
+ border-radius: 100%;
+ box-shadow: 2px 3px 5px #000;
+ margin-left: 5px;
+ vertical-align: middle;
+ height: 40px;
+ width: 40px;
+
+}
+

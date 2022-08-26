@@ -1,0 +1,92 @@
+
+<div class="content">
+
+  <div class="">
+    <div class="card-body bg-info">
+
+
+      <div class="titulo">
+        <h2><b> Casos generales</b></h2>
+      </div>
+
+      <div class="contenidotabla">
+
+        <table class="table table-hover table-fixed">
+          <thead>
+          <tr style="width: 3700">
+            <th style="width: 150px" class="table-dark">Número_caso</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_notificación</th>
+            <th style="width: 150px" class="table-dark">Código_divipola</th>
+            <th style="width: 200px" class="table-dark">Ciudad</th>
+            <th style="width: 200px" class="table-dark">Departamento</th>
+            <th style="width: 150px" class="table-dark">Atención</th>
+            <th style="width: 100px" class="table-dark">Edad</th>
+            <th style="width: 100px" class="table-dark">Sexo</th>
+            <th style="width: 200px" class="table-dark">Tipo</th>
+            <th style="width: 200px" class="table-dark">Estado</th>
+            <th style="width: 150px" class="table-dark">País_de_procedencia</th>
+            <th style="width: 200px" class="table-dark">FIS</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_muerte</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_diagnótico</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_recuperación</th>
+            <th style="width: 200px" class="table-dark">Fecha_de_reporte_web</th>
+            <th style="width: 200px" class="table-dark">Tipo_de_recuperación</th>
+            <th style="width: 150px" class="table-dark">Código_dpto</th>
+            <th style="width: 150px" class="table-dark">Código_país</th>
+            <th style="width: 200px" class="table-dark">Pertenencia_étnica</th>
+            <th style="width: 200px" class="table-dark">Nombre_grupo_étnico</th>
+          </tr>
+
+        </thead>
+        <tbody>
+           <tr style="width: 3700px" class="" *ngFor="let list of listPacients">
+            <td style="width: 150px" class="table-dark bg-info">{{list.id_de_caso}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_de_notificaci_n}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.c_digo_divipola}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.ciudad_de_ubicaci_n}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.departamento}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.atenci_n}}</td>
+            <td style="width: 100px" class="table-dark bg-info">{{list.edad}}</td>
+            <td style="width: 100px" class="table-dark bg-info">{{list.sexo}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.tipo}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.estado}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.pa_s_de_procedencia}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fis}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_de_muerte}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_diagnostico}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_recuperado}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.fecha_reporte_web}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.tipo_recuperaci_n}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.codigo_deparatamento}}</td>
+            <td style="width: 150px" class="table-dark bg-info">{{list.codigo_pais}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.pertenencia_etnica}}</td>
+            <td style="width: 200px" class="table-dark bg-info">{{list.nombre_grupo_etnico}}</td>
+          </tr>
+        </tbody>
+
+        </table>
+
+      </div>
+
+      <div class="botones">
+        <div class="boton">
+         <button *ngIf="visibleAtras" type="button" class="btn btn-success" (click)="atras()">
+          <ion-icon name="mr-2 lead arrow-back-outline"></ion-icon>
+          Atrás</button>
+        <button type="button" class="btn btn-success" routerLink="/graficasgenerales">
+          <ion-icon name="stats-chart-outline"></ion-icon>
+          Generar gráficos</button>
+        <button type="button" class="btn btn-success" (click)="exportarDatos()">
+          <ion-icon name="download-outline"></ion-icon>
+          Descargar</button>
+          <button type="button" class="btn btn-success" (click)="siguiente()">
+          <ion-icon name="mr-2 lead arrow-forward-outline"></ion-icon>
+          Siguiente</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>

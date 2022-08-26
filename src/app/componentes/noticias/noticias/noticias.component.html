@@ -1,0 +1,48 @@
+
+<div class="content">
+    <div id="interior">
+      <h4>Noticias</h4>
+        <section id="contenido">
+        <div *ngFor="let noticia of noticias">
+        <article class="proyectos">
+            <div>
+              <hr/>
+              <h2>{{noticia.tituloNoticia}}</h2>
+              <hr/>
+            </div>
+            <div id="imagen">
+                <img [src]="noticia.imagen" >
+            </div>
+           <p>{{noticia.texto}}</p>
+        </article>
+        <div class="limpiar"></div>
+        </div>
+        </section>
+        <aside>
+            <div>
+                <h3>Nuevo coronavirus</h3>
+                <h6>2019-nCoV</h6>
+            </div>
+            <p >
+                El nuevo <strong> coronavirus 2019 </strong> (2019-nCoV) es un nuevo tipo de coronavirus. Causa enfermedades respiratorias en las personas. Fue identificado por primera vez en Wuhan, China.
+            </p>
+            <img src="/assets/Imagenes/imagenaside1.png" alt="Imagen aside1">
+
+
+          <h6>Sintomas del 2019-nCoV</h6>
+
+          <p>
+            La infección <strong> 2019-nCoV </strong> puede variar de leve, sin síntomas o síntomas menores, a grave o incluso mortal. En general, los síntomas comienzan entre 2 y 14 días después de la infección.
+            <br> <br> Incluyen:
+            <br>
+            <br>
+             -Fiebre <br>
+             -Tos <br>
+             -Falta de aliento
+
+          </p>
+          <img src="/assets/Imagenes/imagenaside2.jpeg" alt="Imagen aside2">
+        </aside>
+    </div>
+
+</div>

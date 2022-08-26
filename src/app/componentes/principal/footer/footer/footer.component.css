@@ -1,0 +1,46 @@
+
+footer{
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  display: block;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+#coninferior{
+  background: #3b3b3b;
+  display: block;
+  width: 100%;
+  height: 80px;
+  clear: both;
+  padding-bottom: 0px;
+  margin-bottom: opx;
+}
+#info{
+  float: left;
+  text-align: left;
+  width: 50%;
+
+}
+#autor{
+  float: right;
+  text-align: right;
+  width: 50%;
+
+}
+#info p, #autor p{
+color: #fff;
+font-family: arial;
+font-size: 14px;
+font-weight: bold;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#autor a{
+  color: #ccc;
+  text-decoration: none;
+}
+#autor a:hover{
+  color: blue;
+}

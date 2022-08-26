@@ -1,0 +1,176 @@
+
+
+<div class="content">
+
+  <div class="">
+    <div class="card-body bg-info">
+
+
+      <div class="titulo">
+        <h2><b>Panorama general</b></h2>
+      </div>
+
+      <div class="contenido">
+
+        <div class="division">
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Género</b></h3>
+            </div>
+
+             <div class="gfc gral">
+              <canvas class="canvasg" id="genero" width="" height="">
+                {{chartGenero}}
+              </canvas>
+             </div>
+             <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Hombres:</b> {{porcM.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Mujeres:</b> {{porcF.toFixed(2)}}%</label>
+             </div>
+          </div>
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Tipo de contagio</b></h3>
+            </div>
+
+             <div class="gfc gral">
+              <canvas class="canvasg" id="tipo" width="" height="">
+                {{chartTipo}}
+              </canvas>
+             </div>
+             <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Relacionado:</b> {{porcR.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>En estudio:</b> {{porcEs.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Importado:</b> {{porcI.toFixed(2)}}%</label>
+             </div>
+          </div>
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Muertes</b></h3>
+            </div>
+
+            <div class="gfc gral">
+              <canvas class="canvasg" id="muertes" width="" height="">
+                {{chartMuertes}}
+              </canvas>
+            </div>
+             <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Vivos:</b> {{porcV.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Fallecidos:</b> {{porcMr.toFixed(2)}}%</label>
+             </div>
+          </div>
+        </div>
+
+        <div class="division">
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Rango de edades</b></h3>
+            </div>
+
+             <div class="gfc gral">
+              <canvas class="canvasg" id="edades" width="" height="">
+                {{chartEdades}}
+              </canvas>
+             </div>
+             <div class="porcentaje">
+              <label class="bg-primary" for=""><b>0-9:</b> {{porcEPr.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>10-19:</b> {{porcESr.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>20-40:</b> {{porcETr.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>41-60:</b> {{porcECr.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>60<:</b> {{porcEQr.toFixed(2)}}%</label>
+             </div>
+          </div>
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Distritos reconocidos</b></h3>
+            </div>
+
+            <div class="gfc gral">
+               <canvas class="canvasg" id="distritos" width="" height="">
+                {{chartDistritos}}
+               </canvas>
+            </div>
+            <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Bogotá:</b> {{porcDBo.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Cartagena:</b> {{porcDC.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Santa Marta:</b> {{porcDSM.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Barranquilla:</b> {{porcDBa.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Buenaventura:</b> {{porcDBu.toFixed(2)}}%</label>
+             </div>
+          </div>
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Atención</b></h3>
+            </div>
+
+            <div class="gfc gral">
+               <canvas class="canvasg" id="atencion" width="" height="">
+                {{chartAtencion}}
+               </canvas>
+            </div>
+            <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Fallecidos:</b> {{porcAF.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>N/A:</b> {{porcAN.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Recuperados:</b> {{porcAR.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Hospital:</b> {{porcAH.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>UCI:</b> {{porcAU.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Casa:</b> {{porcAC.toFixed(2)}}%</label>
+             </div>
+          </div>
+        </div>
+
+        <div class="division">
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Estado</b></h3>
+            </div>
+
+             <div class="gfc gral">
+              <canvas class="canvasg" id="estado" width="" height="">
+                {{chartEstado}}
+              </canvas>
+             </div>
+              <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Fallecidos:</b> {{porcEF.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>N/A:</b> {{porcEN.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Leve:</b> {{porcEL.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Asintomático:</b> {{porcEA.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>Moderado:</b> {{porcEM.toFixed(2)}}%</label>
+             </div>
+          </div>
+          <div class="grafica">
+            <div class="titulog">
+              <h3><b>Tipo de recuperación</b></h3>
+            </div>
+
+            <div class="gfc gral">
+               <canvas class="canvasg" id="recuperacion" width="" height="">
+                {{chartTipoRecuperacion}}
+               </canvas>
+            </div>
+             <div class="porcentaje">
+              <label class="bg-primary" for=""><b>Tiempo:</b> {{porcTRT.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>N/A:</b> {{porcTRN.toFixed(2)}}%</label>
+              <label class="bg-primary" for=""><b>PCR:</b> {{porcTRP.toFixed(2)}}%</label>
+             </div>
+          </div>
+           <div class="grafica">
+            <div class="titulog">
+              <h3><b>Grafica nueve</b></h3>
+            </div>
+
+            <div class="gfc gral">
+               <canvas class="canvasg" id="atencion" width="" height="">
+                {{chartAtencion}}
+               </canvas>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,109 @@
+.content{
+  overflow: hidden;
+  height: 77.2vh;
+  padding-bottom: 0rem;
+  padding-top: 0px;
+  background-color: white;
+}
+
+.card-body{
+  overflow:hidden;
+  /* width: 100%; */
+  height: 76vh;
+  /* background-color: darkgray; */
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.contenido{
+
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 3px;
+  height: 68vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.titulo{
+
+  width: 100%;
+  padding-top: 2px;
+  height: 40px;
+  text-align: center;
+  background-color: coral;
+
+}
+
+.flex{
+  display: flex;
+}
+
+p{
+  font-size: 25px;
+}
+
+.buscar{
+  position: relative;
+  margin: 3px 3px 3px 3px;
+  margin-right: 10px;
+  width: 40%;
+  height: 30px;
+}
+
+.titulog{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-color: coral;
+}
+
+.division{
+  width: 99.5%;
+  height: 99.5%;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: flex;
+  /* background-color: chartreuse; */
+}
+ .division .grafica{
+
+  margin: 10px 10px 10px 10px;
+  width: 32.3%;
+  height: 96%;
+  background-color: white;
+
+}
+.gfc{
+  margin: 5px 5px 5px 5px;
+  /* background-color: black; */
+  width: 97.5%;
+  height: 90%;
+}
+
+.gral{
+  /* background-color: blue; */
+  height: 48%;
+}
+
+.canvasg{
+  margin-top: 15px;
+  margin-bottom: 50px;
+  /* background-color: cornflowerblue; */
+}
+
+.porcentaje{
+  margin: 5px 5px 5px 5px;
+  padding-top: 10px;
+  width: 97.5%;
+  height: 38%;
+  /* background-color: deepskyblue; */
+  overflow-y: auto;
+}
+
+.porcentaje label{
+  margin: 10px 20px 0px 20px;
+}

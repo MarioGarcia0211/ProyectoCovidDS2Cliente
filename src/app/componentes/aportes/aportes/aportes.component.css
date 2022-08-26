@@ -1,0 +1,90 @@
+
+.content{
+    overflow: hidden;
+    height: 77.2vh;
+    padding-bottom: 10rem;
+    padding-top: 5px;
+    width: 100%;
+   /*  background-color: darkblue; */
+}
+.contenido{
+  overflow: hidden;
+  height: 69vh;
+  margin: 20px 20px 20px 20px;
+  width: 97%;
+  /* background-color: #6495ED; */
+  display: flex;
+}
+.mensaje{
+  width: 43%;
+  height: 97%;
+  margin: 5px 5px 5px 5px;
+  overflow: hidden;
+  background-color: #1E90FF;
+}
+.titulo{
+  width: auto;
+  height: 50px;
+  background-color: #B0E0E6;
+}
+.titulo h2{
+  font-size: 40px;
+  text-align: center;
+}
+.parrafo{
+  margin: 20px 20px 20px 20px;
+  background-color: white;
+}
+.parrafo p{
+  font-size: 16.8px;
+}
+
+.chat{
+  width: 55%;
+  overflow: hidden;
+  height: 97%;
+  margin: 5px 5px 5px 5px;
+  background-color: #1E90FF;
+}
+.titulo2{
+  width: auto;
+  height: 35px;
+  background-color: #B0E0E6;
+}
+.titulo2 h2{
+ font-size: 30px;
+  text-align: left;
+}
+.cont{
+  width: 97%;
+  height: 67%;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  overflow: auto;
+}
+.cont p{
+  font-size: 15px;
+  margin: 5px 5px 5px 5px;
+}
+.enviar{
+  overflow: hidden;
+  width: 98%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 80px;
+  display: flex;
+  /* background-color: darkorchid; */
+}
+.text{
+  width: 75%;
+}
+button{
+  width: 25%;
+}
+button:hover{
+
+   background-color: #B0E0E6;
+   animation: reverse;
+   animation-duration: 2ms;
+}

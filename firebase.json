@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/ProyectoCovidDS2Cliente",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

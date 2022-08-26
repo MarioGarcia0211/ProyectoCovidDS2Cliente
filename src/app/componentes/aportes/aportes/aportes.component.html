@@ -1,0 +1,40 @@
+
+<div class="content">
+<div class="contenido">
+<div class="mensaje">
+  <div class="titulo">
+    <h2><b>Titulo aporte</b></h2>
+    <hr>
+  </div>
+  <div class="parrafo">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae eius eligendi dolores dolorum quibusdam neque officia tenetur molestiae quidem totam maiores expedita nostrum ad dicta ratione nesciunt cupiditate, at nobis?
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae eius eligendi dolores dolorum quibusdam neque officia tenetur molestiae quidem totam maiores expedita nostrum ad dicta ratione nesciunt cupiditate, at nobis?
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae eius eligendi dolores dolorum quibusdam neque officia tenetur molestiae quidem totam maiores expedita nostrum ad dicta ratione nesciunt cupiditate, at nobis?
+    </p>
+  </div>
+</div>
+<div class="chat">
+
+  <div class="titulo2">
+    <h2><b>Chat</b></h2>
+  </div>
+  <div class="cont">
+    <div class="p" *ngFor="let chat of chats">
+      <hr>
+      <p>{{chat.mensaje}}</p>
+      <hr>
+    </div>
+  </div>
+  <div class="enviar">
+    <textarea [formControl]="texto" class="text" name="" id="" cols="" rows=""></textarea>
+    <button type="button" (click)="enviarAporte()"><ion-icon class="mr-2 lead" name="send-outline"></ion-icon>Enviar</button>
+  </div>
+
+</div>
+</div>
+</div>
